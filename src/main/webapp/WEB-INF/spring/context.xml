@@ -28,7 +28,7 @@ http://www.springframework.org/schema/mvc http://www.springframework.org/schema/
 	<mvc:annotation-driven />
 
 	<!-- Forwards requests to the "/" resource to the "welcome" view -->
-	<mvc:view-controller path="/" view-name="cart"/>
+	<mvc:view-controller path="/" view-name="welcome"/>
 
 	<!-- Configures Handler Interceptors -->	
 	<mvc:interceptors>

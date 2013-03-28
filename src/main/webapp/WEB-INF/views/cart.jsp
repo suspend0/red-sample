@@ -7,8 +7,8 @@
 <body>
   <h3>Items:</h3>
   <c:forEach var="item" items="${items}">
-	<div>${item.articleNo} @ ${item.price}, qty: ${item.quantity}  <a href="/cart/removefromcart/${item.articleNo}">[-] remove</a> <a href="/cart/addtocart/${item.articleNo}">[+] add</a></div>
+	<div>${item.articleNo} @ ${item.price}, qty: ${item.quantity}  <a href="${pageContext.request.contextPath}/cart/removefromcart/${item.articleNo}">[-] remove</a> <a href="${pageContext.request.contextPath}/cart/addtocart/${item.articleNo}">[+] add</a></div>
   </c:forEach>
-  <a href="/cart/addtocart/${add}">add "${add}"</a>
+  <a href="${pageContext.request.contextPath}/cart/addtocart/${add}">add "${add}"</a>
 </body>
 </html>
